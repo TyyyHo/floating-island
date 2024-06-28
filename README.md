@@ -4,12 +4,15 @@ An interactive web application that display an ocean and a floating island. User
 
 ## Table of Contents
 
+- [Demo](#Demo)
 - [Installation](#installation)
 - [Usage](#usage)
 - [Features](#features)
-- [Contributing](#contributing)
 - [License](#license)
-- [Acknowledgments](#acknowledgments)
+
+## Demo
+
+![demo of website](https://github.com/TyyyHo/floating-island/blob/main/public/demo/demo.webp)
 
 ## Installation
 
@@ -24,7 +27,7 @@ Follow these steps to set up the project on your local machine:
 2. Navigate to the project directory:
 
    ```bash
-   cd floating-island-simulation
+   cd floating-island
    ```
 
 3. Install the dependencies:
