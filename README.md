@@ -1,4 +1,4 @@
-# Floating Island
+# Floating island
 
 An interactive web application that display an ocean and a floating island. Users can change the weather and time of day to experience different views.
 

@@ -9,7 +9,6 @@ import { createSun } from "../THREE/createSun";
 import { createWeather } from "../THREE/createWeather";
 import { createSites } from "../THREE/createSites";
 import { createIsland } from "../THREE/createIsland";
-// import { createCloud } from "../THREE/createCloud";
 
 // types
 import { iCreator, iSite } from "../types";
@@ -29,7 +28,6 @@ export default function Canvas({ time, weather }: { time: string; weather: strin
   const { sky } = createSky(initValue, enviromentParams);
   const { sun } = createSun(time, weather);
   const { rain_1, rain_2 } = createWeather(initValue);
-  // const { clouds } = createCloud(initValue);
 
   function updateElement() {
     // updating three elements when enviromentParams are changed
@@ -44,20 +42,6 @@ export default function Canvas({ time, weather }: { time: string; weather: strin
       creator.scene.add(rain_1);
       creator.scene.add(rain_2);
     }
-
-    // ocean.onBeforeRender = function (renderer, scene, camera) {
-    //   scene.traverse(function (object) {
-    //     if (object.layers.test(camera.layers) && object.layers.isEnabled(1)) {
-    //       object.visible = false;
-    //     }
-    //   });
-
-    //   scene.traverse(function (object) {
-    //     if (object.layers.test(camera.layers) && object.layers.isEnabled(1)) {
-    //       object.visible = true;
-    //     }
-    //   });
-    // };
   }
 
   function animate() {
