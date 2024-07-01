@@ -15,6 +15,7 @@ An interactive web application that display an ocean and a floating island. User
 ## Demo
 
 ![demo of website](https://github.com/TyyyHo/floating-island/blob/main/public/demo/demo.webp)
+
 <a href="[https://github.com/drinkspiller/threejs_chromakey_video_material](https://tyyyho.github.io/floating-island/)">Demo</a>
 
 ## Installation
