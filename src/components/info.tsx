@@ -17,7 +17,7 @@ export default function Info(): ReactNode {
         </div>
       </section>
       <button id="infoButton" onClick={() => setIsShow(!isShow)}>
-        <img src="/icon/info.webp" alt="info" />
+        <img src="/floating-island/icon/info.webp" alt="info" />
       </button>
     </>
   );
