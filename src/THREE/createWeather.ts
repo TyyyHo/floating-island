@@ -3,6 +3,8 @@ import * as THREE from "three";
 // types
 import { iInitValue } from "../types";
 
+import rainDropMaterail from "/material/raindrop.svg";
+
 export function createWeather(initValue: iInitValue) {
   const rainCount = 30000; // 雨量多寡
 
@@ -36,7 +38,7 @@ export function createWeather(initValue: iInitValue) {
   rainGeo2.setAttribute("size", new THREE.BufferAttribute(sizeArray, 1));
 
   // set material for rain
-  const raindrop = new THREE.TextureLoader().load("/material/raindrop.svg");
+  const raindrop = new THREE.TextureLoader().load(rainDropMaterail);
   const rainMaterial = new THREE.PointsMaterial({
     color: "#4EC3E0",
     size: 350,

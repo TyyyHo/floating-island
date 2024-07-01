@@ -7,7 +7,7 @@ export function createIsland(creator: iCreator) {
   const scale = 500;
 
   loader.load(
-    "/model/island.glb",
+    "/floating-island/model/island.glb",
     function (gltf) {
       const model = gltf.scene;
 
@@ -19,7 +19,7 @@ export function createIsland(creator: iCreator) {
     },
     (xhr) => {
       if (xhr.loaded / xhr.total === 1) {
-        console.log("island", "load success");
+        console.log("island load success");
       }
     },
     (error) => {
